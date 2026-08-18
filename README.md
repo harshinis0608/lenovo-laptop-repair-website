@@ -49,7 +49,7 @@ This project was created as a laptop repair and service website, focusing on a c
 
 ### About Us
 
-![About Us](images/aboutus.png)
+![About Us](images/about.png)
 
 ### Contact & Services
 
