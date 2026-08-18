@@ -41,6 +41,20 @@ lenovo-laptop-repair-website/
 
 This project was created as a laptop repair and service website, focusing on a clean user interface and easy access to service and contact information.
 
+## Website Preview
+
+### Homepage
+
+![Homepage](images/home.png)
+
+### About Us
+
+![About Us](images/aboutus.png)
+
+### Contact & Services
+
+![Contact](images/contactus.png)
+
 ## Author
 
 Harshini
