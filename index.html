@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    width:100%;
+    background:#f5f5f5;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 40px;
+    box-sizing:border-box;
+    border-bottom:1px solid #ddd;
+}
+
+/* LOGO */
+.logo{
+    height:65px;   /* smaller & clean */
+    width:auto;
+    object-fit:contain;
+}
+
+/* RIGHT SIDE */
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:30px;   /* reduced gap */
+}
+
+/* ICON BOX */
+.icon-box{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.icon{
+    width:35px;   /* smaller icons */
+    height:35px;
+    object-fit:contain;
+}
+
+/* TEXT STYLES */
+.phone-number{
+    font-size:16px;
+    font-weight:700;
+    color:#0B3C5D;
+}
+
+.call-text{
+    font-size:13px;
+    color:#E2231A;
+}
+
+.open-text{
+    font-size:12px;
+    color:#666;
+}
+
+.time-text{
+    font-size:14px;
+    font-weight:600;
+    color:#0B3C5D;
+}
+
+/* CALL BUTTON */
+.call-btn{
+    text-decoration:none;
+    background:#E2231A;
+    color:white;
+    padding:8px 18px;
+    border-radius:6px;
+    font-weight:600;
+    font-size:13px;
+    transition:0.3s ease;
+}
+
+.call-btn:hover{
+    background:#c81b15;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+  .header{
+    position:relative;
+    padding:10px 20px;
+}
+
+.hamburger{
+    display:block;
+    position:absolute;
+    right:20px;
+    top:30px;
+    z-index:1000;
+    font-size:32px;   
+}
+
+.header-right{
+    display:none;
+    flex-direction:column;
+    background:#eeeeee;
+    position:absolute;
+    top:100%;
+    right:0;
+    width:100%;
+    padding:20px;
+    gap:15px;
+    z-index:999;
+}
+
+.header-right.active{
+    display:flex;
+}
+
+    .header{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+        padding:12px 20px;
+        text-align:center;
+    }
+
+    .header-right{
+        flex-direction:column;
+        gap:12px;
+        width:100%;
+    }
+
+    .logo{
+        height:55px;
+    }
+
+    .call-btn{
+        width:100%;
+        text-align:center;
+    }
+}
+
+
+/* ================= TABLET ================= */
+
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+    font-family:Arial;
+}
+
+
+.heroSlide{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-size:cover;
+    background-position:center;
+}
+
+
+.overlay{
+    background:rgba(0,0,0,0.55);
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    padding-left:80px;
+}
+
+.hero-content{
+    color:white;
+    width:50%;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:35px;
+    margin-bottom:30px;
+}
+
+.hero-btn{
+    background:#E2231A;
+    color:white;
+    padding:14px 35px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.arrow{
+    position:absolute;
+    top:50%;
+    font-size:40px;
+    color:white;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.left-arrow{
+    left:20px;
+}
+
+.right-arrow{
+    right:20px;
+}
+
+@media(max-width:1024px){
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.hero-content p{
+    font-size:16px;
+    line-height:28px;
+}
+
+
+.icon{
+    width:50px;
+    height:50px;
+}
+
+.logo{
+    height:80px;
+}
+
+}
+
+.hero{
+    height:auto;
+}
+
+.overlay{
+    padding:40px 20px;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero-content p{
+    font-size:14px;
+    line-height:24px;
+}
+
+.arrow{
+    font-size:30px;
+}
+
+
+.hero{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+    font-family:Arial;
+}
+
+.heroSlide{
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    display:flex;
+    align-items:center;
+    padding:0 80px;
+}
+
+.hero-content{
+    width:50%;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:35px;
+    margin-bottom:30px;
+}
+
+.hero-btn{
+    background:#E2231A;
+    color:white;
+    padding:14px 35px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.arrow{
+    position:absolute;
+    top:50%;
+    font-size:40px;
+    color:white;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.left-arrow{ left:20px; }
+.right-arrow{ right:20px; }
+@media(max-width:768px){
+
+.hero{
+    height:auto;
+}
+
+.overlay{
+    padding:40px 20px;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero-content p{
+    font-size:14px;
+    line-height:24px;
+}
+
+.hero-btn{
+    padding:10px 25px;
+    font-size:14px;
+}
+
+.arrow{
+    font-size:30px;
+}
+
+}
+@media(max-width:480px){
+
+.hero-content h1{
+    font-size:22px;
+}
+
+.hero-content p{
+    font-size:13px;
+}
+
+}
+/* contact us */
+/* SECTION */
+.about-section {
+  padding: 100px 8%;
+  background: #f4f6f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* WRAPPER */
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE IMAGE */
+.about-left {
+  position: relative;
+  flex: 1;
+}
+
+.about-left img {
+  width: 100%;
+  border-radius: 12px;
+     /* increased 10% */
+  object-fit: cover;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  height: 450px;
+max-height: 500px;
+
+}
+
+
+/* HEADING BOX */
+.heading-box {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  background: #E2231A;
+  padding: 18px 28px;
+  border-radius: 8px;
+  max-width: 85%;
+  height: auto;              /* REMOVE fixed height */
+}
+
+.heading-box h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+/* RIGHT SIDE */
+.about-right {
+  flex: 1;
+}
+
+/* TIMELINE CONTAINER */
+.timeline {
+  position: relative;
+  padding-left: 150px;
+}
+
+/* SLANTED RED LINE */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 35px;
+  top: -20px;
+  width: 6px;
+  height: 110%;
+  background: #E2231A;
+  transform: rotate(10deg);
+  border-radius: 10px;
+}
+
+/* EACH ITEM */
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+/* CIRCLE */
+.circle {
+  position: absolute;
+  left: -50px;
+ top: -4px;
+  /* was 8px */
+  width: 26px;
+  height: 26px;
+  background: #0B3C5D;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+.timeline-item h4 {
+  font-size: 24px;   /* Increased */
+  margin-bottom: 12px;
+  color: #0B3C5D;
+  font-weight: 600;
+}
+
+/* PARAGRAPH */
+.timeline-item p {
+  font-size: 18px;   /* Increased */
+  line-height: 1.8;
+  color: #444;
+  max-width: 500px;
+}
+
+
+
+.about-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #0B3C5D;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+/* Optional stylish underline */
+.about-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #E2231A;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 4px;
+}
+.about-title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/* ============================= */
+/*        TABLET VIEW            */
+/* ============================= */
+
+@media (max-width: 992px) {
+
+  .about-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .about-left img {
+    height: 420px;
+  }
+
+  .heading-box {
+    position: static;
+    margin-top: 20px;
+  }
+
+}
+
+
+/* ============================= */
+/*        MOBILE VIEW            */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .about-section {
+    padding: 60px 5%;
+  }
+
+  .about-title {
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-left img {
+    height: 350px;
+    max-height: none;
+  }
+
+  .heading-box {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding: 18px;
+    margin-left:25px;
+  }
+
+  .heading-box h2 {
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  /* ===== TIMELINE FIX ===== */
+
+  .timeline {
+    padding-left: 0;          /* remove large left space */
+  }
+
+  .timeline::before {
+    display: none;            /* hide slanted red line */
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 40px;       /* space for dot */
+    margin-bottom: 35px;
+  }
+
+  .circle {
+    left: 0;                  /* align properly */
+    top: 6px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .timeline-item h4 {
+    font-size: 18px;
+  }
+
+  .timeline-item p {
+    font-size: 15px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+
+  .heading-box {
+    position: static;        /* REMOVE absolute */
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .heading-box h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+/* service */
+.lapserve-luxury-section {
+  padding: 120px 8%;
+  background: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+.lapserve-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  color: #0B3C5D;   /* Dark Blue */
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.lapserve-title::after {
+  content: "";
+  width: 90px;
+  height: 4px;
+  background: #E2231A;   /* Lenovo Red */
+  display: block;
+  margin: 18px auto 0;
+  border-radius: 4px;
+}
+
+/* TIMELINE */
+
+.lapserve-timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.lapserve-timeline::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background: #E2231A;   /* Lenovo Red */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lapserve-item {
+  position: relative;
+  width: 50%;
+  padding: 30px 50px;
+}
+
+.lapserve-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.lapserve-item:nth-child(even) {
+  left: 50%;
+}
+
+.lapserve-card {
+  background: #0B3C5D;   /* Dark Blue */
+  color: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.lapserve-card:hover {
+  transform: translateY(-8px);
+}
+
+.lapserve-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.lapserve-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.95;
+}
+
+/* DOT */
+
+.lapserve-item::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #E2231A;
+  border-radius: 50%;
+  top: 45px;
+  z-index: 1;
+  border: 4px solid #ffffff;
+}
+
+.lapserve-item:nth-child(odd)::before {
+  right: -9px;
+}
+
+.lapserve-item:nth-child(even)::before {
+  left: -9px;
+}
+
+/* ======================= */
+/* RESPONSIVE              */
+/* ======================= */
+
+@media (max-width: 768px) {
+
+  .lapserve-timeline::before {
+    left: 20px;
+  }
+
+  .lapserve-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 60px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  .lapserve-item::before {
+    left: 11px;
+  }
+}
+
+.lenova-why-section {
+  padding: 60px 8%;
+  background: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.lenova-wrapper {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.lenova-heading {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.lenova-heading span {
+  display: block;
+  color: #0B3C5D; /* Dark Blue */
+}
+
+.lenova-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 35px;
+  max-width: 850px;
+  line-height: 1.6;
+}
+
+/* FEATURE GRID */
+
+.lenova-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px 18px;
+}
+
+.lenova-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0B3C5D;
+}
+
+.lenova-feature-item i {
+  font-size: 16px;
+  color: #E2231A; /* Lenovo Red */
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .lenova-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lenova-heading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .lenova-features {
+    grid-template-columns: 1fr;
+  }
+
+  .lenova-heading {
+    font-size: 24px;
+  }
+
+  .lenova-description {
+    font-size: 14px;
+  }
+}
+
+</style>
+
+
+<style>
+  @media (max-width: 768px) {
+
+  .lapserve-timeline::before {
+    left: 20px;
+  }
+
+  .lapserve-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 60px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    text-align: left;
+  }
+
+  /* FIXED DOT ALIGNMENT */
+  .lapserve-item::before {
+    left: 20px;                /* same as line */
+    transform: translateX(-50%); /* center it perfectly */
+  }
+
+}
+.lapserve-item::before {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* whatsappp******************************************************************************/
+/* Floating Buttons Container */
+.floating-buttons {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 9999;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Find Us Button */
+.findus-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #0B3C5D; /* Dark Blue */
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+.findus-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Icons */
+.floating-buttons i {
+  font-size: 18px;
+}
+@media (max-width: 600px) {
+  .whatsapp-btn span,
+  .findus-btn span {
+    display: none;
+  }
+
+  .whatsapp-btn,
+  .findus-btn {
+    padding: 14px;
+    border-radius: 50%;
+  }
+}
+
+/****** contact us ************************/
+.contact-section{
+    width:100%;
+    background:#f2f2f2;
+    padding:60px 20px;
+    text-align:center;
+    font-family:Arial;
+}
+
+.contact-subtitle{
+    font-size:18px;
+    margin-bottom:10px;
+    color:#444;
+}
+
+.contact-title{
+    font-size:40px;
+    color:#E2231A;
+    margin-bottom:40px;
+}
+
+.form-row{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:20px;
+}
+
+.form-row input,
+.form-row select{
+    width:300px;
+    padding:15px;
+    border:2px solid #ff5e5e;
+    background:transparent;
+    outline:none;
+    font-size:16px;
+}
+
+.submit-row{
+    margin-top:30px;
+}
+
+.submit-btn{
+    background:#E2231A;
+    color:white;
+    border:none;
+    padding:15px 100px;
+    font-size:20px;
+    cursor:pointer;
+}
+@media(max-width:768px){
+
+.form-row{
+    flex-direction:column;
+    align-items:center;
+}
+
+.form-row input,
+.form-row select{
+    width:90%;
+}
+
+.submit-btn{
+    width:90%;
+    padding:15px;
+}
+
+}
+
+/* footer */
+.footer{
+    width:100%;
+    background:#0B3C5D;
+    color:white;
+    padding:50px 20px;
+    font-family:Arial;
+    
+}
+.footer-box p{
+    margin-bottom:8px;
+    line-height:1.6;
+    max-width:250px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-bottom:30px;
+}
+
+.footer-box h3{
+    margin-bottom:15px;
+}
+
+.footer-box p{
+    margin-bottom:8px;
+}
+
+.footer-box a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.2);
+    padding-top:20px;
+}
+.footer{
+    position:relative;
+    left:50%;
+    right:50%;
+    
+    margin-left:-50vw;
+    margin-right:-50vw;
+    width:100vw;
+}
+
+@media(max-width:768px){
+.footer-container{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+}
+html{
+scroll-behavior:smooth;
+height: 100%;
+}
+</style>
+
+
+<body>
+    <!----------------------------------------------- header section --------------------------------------------------------------------------->
+  <div class="header">
+
+<img src="images/logo1.png" class="logo">
+
+<!-- HAMBURGER -->
+<div class="hamburger" id="hamburger" onclick="toggleMenu()">
+☰
+</div>
+
+<div class="header-right" id="mobileMenu">
+
+    <div class="icon-box">
+        <img src="images/call.png" class="icon">
+        <div>
+            <div class="phone-number">+91 9060000255</div>
+            <div class="call-text">Call Now</div>
+        </div>
+    </div>
+
+    <div class="icon-box">
+        <img src="images/clock.png" class="icon">
+        <div>
+            <div class="open-text">WE ARE OPEN</div>
+            <div class="time-text">9am–9pm</div>
+        </div>
+    </div>
+
+    <a href="tel:9060000255" class="call-btn">CALL US</a>
+
+</div>
+
+</div>
+
+
+<!---------------------------------------------- hero section ---------------------------------------------------------->
+
+<!-------------------------------- HERO SLIDER SECTION -------------------------------->
+
+<div class="hero">
+
+    <!-- SLIDE 1 -->
+    <div class="heroSlide" style="background-image:url('images/hero1.png');">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1>Benefits of Lenovo Laptop <br> Service Center</h1>
+                <p>
+                    Rest easy with 6 months service warranty and 12 months spare warranty on any repairs we do.
+                    We use only the best parts and never outsource.
+                </p>
+                <a href="tel:9060000255" class="hero-btn">CALL NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="heroSlide" style="background-image:url('images/hero2.png'); display:none;">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1>Professional Laptop <br> Repair Experts</h1>
+                <p>
+                    Fast diagnosis and same day repair for all laptop brands.
+                </p>
+                <a href="#about" class="hero-btn">KNOW MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="heroSlide" style="background-image:url('images/hero3.png'); display:none;">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1>Best Laptop Service Center in Bangalore</h1>
+                <p>
+                    Screen Replacement, RAM Upgrade, SSD Upgrade, Touchpad Repair and more...
+                </p>
+              
+                <a href="#contact" class="hero-btn">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ARROWS -->
+    <button onclick="prevHero()" class="arrow left-arrow">❮</button>
+    <button onclick="nextHero()" class="arrow right-arrow">❯</button>
+
+</div>
+<style>
+  /* ================= HERO SECTION ================= */
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+}
+
+/* Each Slide */
+.heroSlide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    transition:opacity 0.5s ease-in-out;
+}
+
+/* Dark Overlay */
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    display:flex;
+    align-items:center;
+    padding:0 80px;
+    box-sizing:border-box;
+}
+
+/* Content */
+.hero-content{
+    width:50%;
+    color:#ffffff;
+}
+
+.hero-content h1{
+    font-size:52px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:32px;
+    margin-bottom:30px;
+}
+
+/* Button */
+.hero-btn{
+    display:inline-block;
+    background:#E2231A;
+    color:#ffffff;
+    padding:14px 30px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.hero-btn:hover{
+    background:#c81b15;
+}
+
+/* Arrows */
+.arrow{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:35px;
+    color:#ffffff;
+    background:none;
+    border:none;
+    cursor:pointer;
+    z-index:5;
+}
+
+.left-arrow{ left:20px; }
+.right-arrow{ right:20px; }
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    .overlay{
+        padding:0 40px;
+    }
+
+    .hero-content{
+        width:70%;
+    }
+
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+        line-height:28px;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .hero{
+        min-height:80vh;
+    }
+
+    .overlay{
+        padding:20px;
+        justify-content:center;
+        text-align:center;
+    }
+
+    .hero-content{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:26px;
+        line-height:32px;
+    }
+
+    .hero-content p{
+        font-size:15px;
+        line-height:22px;
+    }
+
+    .hero-btn{
+        padding:12px 20px;
+        font-size:14px;
+    }
+
+    /* Hide arrows on mobile */
+    .arrow{
+        display:none;
+    }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:480px){
+
+    .hero-content h1{
+        font-size:22px;
+    }
+
+    .hero-content p{
+        font-size:14px;
+    }
+
+}
+@media (max-width:768px){
+
+  .arrow{
+      display:block;              /* keep visible */
+      font-size:24px;             /* smaller size */
+      background:rgba(0,0,0,0.5); /* circular background */
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      text-align:center;
+      line-height:40px;
+      top:50%;
+      transform:translateY(-50%);
+  }
+
+  .left-arrow{
+      left:10px;
+  }
+
+  .right-arrow{
+      right:10px;
+  }
+
+}/* DEFAULT = DESKTOP */
+.hamburger{
+    display: none;   /* Hide on desktop */
+}
+
+/* MOBILE ONLY */
+@media (max-width: 768px){
+
+    .hamburger{
+        display: block;   /* Show on mobile */
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 32px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+}
+.form-row select{
+color:#888;
+}
+
+.form-row select:valid{
+color:#000;
+}
+
+
+</style>
+
+<!--------- about us section -------------->
+<!--- abouts us-->
+   <section class="about-section" id="about">
+
+    <h1 class="about-title">About Us</h1>
+  <div class="about-wrapper">
+
+    <!-- LEFT IMAGE -->
+    <div class="about-left">
+      <img src="images/aboutus.jpeg" alt="Laptop Service">
+      <div class="heading-box">
+        <h2>Trusted Laptop Service Experts</h2>
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="about-right">
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <h4>Industry-Level Expertise</h4>
+            <p>
+              We provide advanced laptop repair and maintenance services
+              tailored for individuals and businesses.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <h4>Fast & Reliable Service</h4>
+            <p>
+              Our technicians ensure quick diagnosis and efficient
+              repair with genuine spare parts.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="circle"></div>
+          <div class="content">
+            <h4>Customer Satisfaction</h4>
+            <p>
+              We focus on delivering quality solutions with
+              transparent pricing and warranty support.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!---- services -->
+<section class="lenova-why-section">
+
+  <div class="lenova-wrapper">
+
+    <h2 class="lenova-heading">
+      Why Lenova Services & Repair is Trusted for
+      <span>Lenovo Laptop Service in Bangalore?</span>
+    </h2>
+
+    <p class="lenova-description">
+      Lenova Services & Repair delivers professional Lenovo laptop repair solutions
+      with certified engineers, genuine spare parts, and a commitment to fast,
+      reliable, and transparent service across Bangalore.
+    </p>
+
+    <div class="lenova-features">
+
+      <div class="lenova-feature-item">
+        <i class="fa-solid fa-award"></i>
+        <span>18+ Years of Repair Experience</span>
+      </div>
+
+      <div class="lenova-feature-item">
+        <i class="fa-solid fa-shield-halved"></i>
+
+        <span>100% Genuine Lenovo Spare Parts</span>
+      </div>
+
+      <div class="lenova-feature-item">
+        <i class="fa-solid fa-user-gear"></i>
+        <span>Certified Lenovo Laptop Technicians</span>
+      </div>
+
+      <div class="lenova-feature-item">
+        <i class="fa-solid fa-file-shield"></i>
+        <span>Service & Parts Warranty Coverage</span>
+      </div>
+
+      <div class="lenova-feature-item">
+        <i class="fa-solid fa-message"></i>
+        <span>Real-Time SMS Service Updates</span>
+      </div>
+
+      <div class="lenova-feature-item">
+        <i class="fa-solid fa-truck"></i>
+        <span>Free Pickup & Drop Across Bangalore</span>
+      </div>
+
+      <div class="lenova-feature-item">
+        <i class="fa-solid fa-tags"></i>
+        <span>Affordable & Transparent Pricing</span>
+      </div>
+
+      <div class="lenova-feature-item">
+        <i class="fa-solid fa-box-open"></i>
+        <span>Brand SOP & ESD-Safe Repair Standards</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <div class="lapserve-timeline">
+
+    <div class="lapserve-item">
+      <div class="lapserve-card">
+        <h3>18+ Years of Technical Mastery</h3>
+        <p>
+          For nearly two decades, Lapserve has delivered refined Lenovo laptop diagnostics,
+          advanced motherboard repairs, and precision component replacements.
+          Our legacy is built on consistency, technical discipline, and trust.
+        </p>
+      </div>
+    </div>
+
+    <div class="lapserve-item">
+      <div class="lapserve-card">
+        <h3>Exclusively Genuine Lenovo Parts</h3>
+        <p>
+          We source and install only authentic Lenovo components, ensuring optimal
+          performance, longevity, and complete brand compliance.
+          No substitutes — only original engineering.
+        </p>
+      </div>
+    </div>
+
+    <div class="lapserve-item">
+      <div class="lapserve-card">
+        <h3>Certified Lenovo Engineers</h3>
+        <p>
+          Our technicians operate under official Lenovo service protocols,
+          maintaining strict ESD-safe standards and advanced diagnostic precision
+          to safeguard your device at every stage.
+        </p>
+      </div>
+    </div>
+
+    <div class="lapserve-item">
+      <div class="lapserve-card">
+        <h3>Complete Transparency</h3>
+        <p>
+          From device intake to final delivery, real-time SMS notifications
+          keep you informed with clarity and confidence.
+          We believe premium service begins with transparency.
+        </p>
+      </div>
+    </div>
+
+    <div class="lapserve-item">
+      <div class="lapserve-card">
+        <h3>Warranty That Reflects Confidence</h3>
+        <p>
+          Every repair is backed by a 6-month service warranty and
+          a 12-month warranty on genuine spare parts.
+          We stand firmly behind our workmanship.
+        </p>
+      </div>
+    </div>
+
+    <div class="lapserve-item">
+      <div class="lapserve-card">
+        <h3>Doorstep Convenience Across Bangalore</h3>
+        <p>
+          Complimentary pickup and delivery ensures your device
+          is collected, restored, and returned with care —
+          often within 24 hours.
+          Professional service without disruption.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<script>
+let heroIndex = 0;
+let heroSlides = document.getElementsByClassName("heroSlide");
+
+function showHero(i){
+    for(let j=0; j<heroSlides.length; j++){
+        heroSlides[j].style.display="none";
+    }
+    heroSlides[i].style.display="block";
+}
+
+function nextHero(){
+    heroIndex++;
+    if(heroIndex>=heroSlides.length){heroIndex=0;}
+    showHero(heroIndex);
+}
+
+function prevHero(){
+    heroIndex--;
+    if(heroIndex<0){heroIndex=heroSlides.length-1;}
+    showHero(heroIndex);
+}
+
+setInterval(nextHero,4000);
+</script>
+<!----------------------- CONTACT SECTION ----------------------->
+
+  <div class="contact-section" id="contact">
+
+                <p class="contact-subtitle">
+                   Ready to get your laptop back in top shape? Contact us now to schedule your repair!
+                </p>
+
+                <h2 class="contact-title">Contact Us Now</h2>
+
+                <form action="https://formsubmit.co/harshini1ga22is194@gmail.com" method="POST">
+
+                       <input type="hidden" name="_captcha" value="false">
+                       <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                       <input type="hidden" name="_subject" value="New Laptop Service Request">
+                       <input type="hidden" name="_template" value="table">
+                       <input type="hidden" name="_autoresponse" value="Thank you! We will contact you shortly.">
+
+         <div class="form-row">
+
+             <input type="text" name="Name" placeholder="Name" required>
+
+             <input type="email" name="Email" placeholder="Email" required>
+
+         </div>
+
+        <div class="form-row" >
+            <input type="text" name="Phone" placeholder="Phone" required>
+              <select name="Laptop Brand" required>
+                    <option value="" disabled selected hidden>Laptop Brand</option>
+                    <option>Dell</option>
+                    <option>HP</option>
+                    <option>Lenovo</option>
+                    <option>Asus</option>
+                    <option>Acer</option>
+                    <option>Apple</option>
+              </select>
+        </div>
+
+
+<div class="form-row">
+
+<select name="Service Centre" required>
+<option value="" disabled selected hidden>Choose a Centre</option>
+<option>Bangalore</option>
+</select>
+
+<select name="Problem" required>
+<option value="" disabled selected hidden>Select Laptop Problem</option>
+<option>Screen Replacement</option>
+<option>Keyboard Issue</option>
+<option>Battery Issue</option>
+<option>Touchpad Issue</option>
+<option>Motherboard Repair</option>
+</select>
+
+</div>
+
+<div class="submit-row">
+<button type="submit" class="submit-btn">Submit</button>
+</div>
+
+</form>
+</div>
+
+
+
+<!---------------------- FOOTER ---------------------->
+
+<!------------ whatspp and location-->
+<!-- Floating Action Buttons -->
+<div class="floating-buttons">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/+91 9060000255" 
+     target="_blank" 
+     class="whatsapp-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Chat on WhatsApp</span>
+  </a>
+
+  <!-- Google Maps -->
+  <a href="https://www.google.com/maps?q=Your+Business+Location" 
+     target="_blank" 
+     class="findus-btn">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Find Us</span>
+  </a>
+</div>
+
+  <script>
+function toggleMenu(){
+
+let menu = document.getElementById("mobileMenu");
+let icon = document.getElementById("hamburger");
+
+menu.classList.toggle("active");
+
+if(menu.classList.contains("active")){
+    icon.innerHTML = "✖";
+}else{
+    icon.innerHTML = "☰";
+}
+
+}
+
+</script>
+
+<footer class="footer">
+<div class="footer-container">
+
+<!-- ABOUT US -->
+
+<div class="footer-box">
+<h3>About Us</h3>
+<p>
+We are trusted Lenovo laptop service experts in Bangalore,
+offering reliable repair solutions with genuine spare parts,
+certified technicians, and fast turnaround time.
+</p>
+</div>
+
+<!-- CONTACT -->
+<div class="footer-box">
+<h3>Contact Us</h3>
+
+<p>
+ <a href="tel:+919060000255">+91 90600 00255</a>
+</p>
+
+<p>
+<a href="mailto:contact@lenovolaptopserviceandrepair.store">
+contact@lenovolaptopserviceandrepair.store
+</a>
+</p>
+
+</div>
+
+<!-- HOURS -->
+<div class="footer-box">
+<h3>Working Hours</h3>
+<p>Monday - Sunday</p>
+<p>9:00 AM – 9:00 PM</p>
+</div>
+
+<!-- AREA -->
+<div class="footer-box">
+<h3>Service Area</h3>
+<p>Bangalore</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Lenovo Laptop Service & Repair. All Rights Reserved.</p>
+</div>
+
+</footer>
+</body>
+</html>
