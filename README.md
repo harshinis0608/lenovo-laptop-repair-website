@@ -14,8 +14,8 @@ A responsive laptop repair and service website designed to provide information a
 
 ## Technologies Used
 
-* HTML5
-* CSS3
+* HTML
+* CSS
 * JavaScript
 
 ## Project Structure
